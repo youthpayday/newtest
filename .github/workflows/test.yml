@@ -14,8 +14,8 @@ jobs:
         uses: garygrossgarten/github-action-ssh@release
         with:
           command: ls -a
-          host: ${{ secrets.HOST }}
+          host: ${{ secrets.HOST2 }}
           username: root
-          privateKey: ${{ secrets.KEY}}
+          privateKey: ${{ secrets.KEY2}}
         env:
           CI: true

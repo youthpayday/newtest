@@ -16,6 +16,6 @@ jobs:
           command: ls -a
           host: ${{ secrets.HOST2 }}
           username: root
-          privateKey: ${{ secrets.KEY2}}
+          password: ${{ secrets.KEY2}}
         env:
           CI: true

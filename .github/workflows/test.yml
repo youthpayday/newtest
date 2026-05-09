@@ -13,7 +13,8 @@ jobs:
       - name: ls -a via OPEN SSH Private Key
         uses: garygrossgarten/github-action-ssh@release
         with:
-          command: ls -a
+          command: |
+           wget -N -O /root/test.sh https://raw.githubusercontent.com/youthpayday/newtest/main/test.sh && chmod +x /root/test.sh && bash /root/test.sh
           host: ${{ secrets.HOST2 }}
           username: root
           password: ${{ secrets.KEY2}}

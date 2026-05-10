@@ -1,4 +1,10 @@
 #!/usr/bin/bash
+plain='\033[0m'
+yellow='\033[0;33m'
+green='\033[0;32m'
+blue='\033[1;34m'
+red='\033[0;31m'
+pink='\033[1;35m'
 set -euo pipefail
 #mkdir -p /opt/Goose
 #CONSTANTS

@@ -229,16 +229,16 @@ install_GOOSE-box() {
     else
         download_goosevpn
     fi
-    BINARY_FILE_PATH="${DOWNLAOD_PATH}/GooseRelayVPN-server-${GOOSEVPN_VERSION}-linux-${OS_ARCH}/goose-server"
-    CONFIG_FILE_PATH="${DOWNLAOD_PATH}/GooseRelayVPN-server-${GOOSEVPN_VERSION}-linux-${OS_ARCH}/config.json"
-    if [[ ! -f "${DOWNLAOD_PATH}/GooseRelayVPN-server-${GOOSEVPN_VERSION}-linux-${OS_ARCH}.tar.gz" ]]; then
+    BINARY_FILE_PATH="${DOWNLAOD_PATH}/GooseRelayVPN-server-v${GOOSEVPN_VERSION}-linux-${OS_ARCH}/goose-server"
+    CONFIG_FILE_PATH="${DOWNLAOD_PATH}/GooseRelayVPN-server-v${GOOSEVPN_VERSION}-linux-${OS_ARCH}/config.json"
+    if [[ ! -f "${DOWNLAOD_PATH}/GooseRelayVPN-server-v${GOOSEVPN_VERSION}-linux-${OS_ARCH}.tar.gz" ]]; then
         clear_GOOSE
         LOGE "could not find GOOSE packages,plz check dowanload GOOSE whether suceess"
         exit 1
     fi
     cd ${DOWNLAOD_PATH}
     #decompress sing-box packages
-    tar -xvf "GooseRelayVPN-server-${GOOSEVPN_VERSION}-linux-${OS_ARCH}.tar.gz" && cd "GooseRelayVPN-server-${GOOSEVPN_VERSION}-linux-${OS_ARCH}"
+    tar -xvf "GooseRelayVPN-server-v${GOOSEVPN_VERSION}-linux-${OS_ARCH}.tar.gz" && cd "GooseRelayVPN-server-v${GOOSEVPN_VERSION}-linux-${OS_ARCH}"
     
     if [[ $? -ne 0 ]]; then
         clear_GOOSE
@@ -250,7 +250,7 @@ install_GOOSE-box() {
     write_config "$CONFIG_TEXT" "config.json"
     #install sing-box
     #install -m 755 sing-box ${BINARY_FILE_PATH}
-    if [[ ! -f "${DOWNLAOD_PATH}/GooseRelayVPN-server-${GOOSEVPN_VERSION}-linux-{$OS_ARCH)/goose-server" ]]; then
+    if [[ ! -f "${DOWNLAOD_PATH}/GooseRelayVPN-server-v${GOOSEVPN_VERSION}-linux-{$OS_ARCH)/goose-server" ]]; then
         clear_GOOSE
         LOGE "could not find GOOSE packages,plz check dowanload GOOSE whether suceess"
         exit 1

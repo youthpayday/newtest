@@ -100,7 +100,7 @@ create_or_delete_path() {
         LOGE "invalid input,should be one paremete,and can be 0 or 1"
         exit 1
     fi
-    local CONFIG_FILE_PATH="oldtext"
+    CONFIG_FILE_PATH="oldtext"
     if [[ "$1" == "1" ]]; then
         LOGI "Will create ${DOWNLAOD_PATH} and ${CONFIG_FILE_PATH} for GOOSE.."
         rm -rf ${DOWNLAOD_PATH}

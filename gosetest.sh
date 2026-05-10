@@ -250,7 +250,7 @@ install_GOOSE-box() {
     write_config "$CONFIG_TEXT" "config.json"
     #install sing-box
     #install -m 755 sing-box ${BINARY_FILE_PATH}
-    if [[ ! -f "${DOWNLAOD_PATH}/GooseRelayVPN-server-v${GOOSEVPN_VERSION}-linux-{$OS_ARCH)/goose-server" ]]; then
+    if [[ ! -f "${DOWNLAOD_PATH}/GooseRelayVPN-server-v${GOOSEVPN_VERSION}-linux-${OS_ARCH}/goose-server" ]]; then
         clear_GOOSE
         LOGE "could not find GOOSE packages,plz check dowanload GOOSE whether suceess"
         exit 1

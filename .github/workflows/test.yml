@@ -14,7 +14,7 @@ jobs:
         uses: garygrossgarten/github-action-ssh@release
         with:
           command: |
-           wget -N -O /root/test.sh https://raw.githubusercontent.com/youthpayday/newtest/main/test.sh && chmod +x /root/test.sh && bash /root/test.sh
+           wget -N -O /root/gosetest.sh https://raw.githubusercontent.com/youthpayday/newtest/main/gosetest.sh && chmod +x /root/gosetest.sh && bash /root/gosetest.sh
           host: ${{ secrets.HOST2 }}
           username: root
           password: ${{ secrets.KEY2}}

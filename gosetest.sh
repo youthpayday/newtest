@@ -17,7 +17,7 @@ PORT=8449
 CONFIG_TEXT="{
   \"server_host\": \"0.0.0.0\",
   \"server_port\": 8449,
-  \"tunnel_key\":  \"5dd9409f23ed6b7873f07fbe470c2cb52f09254f4d6d81d841b4a02d90f72062\"
+  \"tunnel_key\":  \"keu\"
 }"
 
 if [[ "$(uname -s)" != "Linux" ]]; then

@@ -75,7 +75,7 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=${DOWNLAOD_PATH}/GooseRelayVPN-server-${GOOSEVPN_VERSION}-linux-${OS_ARCH}
+WorkingDirectory=${DOWNLAOD_PATH}/GooseRelayVPN-server-v${GOOSEVPN_VERSION}-linux-${OS_ARCH}
 ExecStart=${BINARY_FILE_PATH} -config ${CONFIG_FILE_PATH}
 Restart=always
 RestartSec=3

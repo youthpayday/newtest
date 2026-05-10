@@ -210,7 +210,7 @@ download_goosevpn() {
 
     #here we need create directory for GOOSE
     create_or_delete_path 1
-    wget -N --no-check-certificate -O ${GOOSE_PATH}/GooseRelayVPN-server-${GOOSEVPN_VERSION}-linux-${OS_ARCH}.tar.gz ${DOWANLOAD_URL}
+    wget -N --no-check-certificate -O ${GOOSE_PATH}/GooseRelayVPN-server-v${GOOSEVPN_VERSION}-linux-${OS_ARCH}.tar.gz ${DOWANLOAD_URL}
 
     if [[ $? -ne 0 ]]; then
         LOGE "Download GOOSE failed,plz be sure that your network work properly and can access github"

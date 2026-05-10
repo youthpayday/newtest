@@ -206,7 +206,7 @@ download_goosevpn() {
     fi
     LOGI "Will choose to use version: ${GOOSEVPN_VERSION}"
 
-    local DOWANLOAD_URL="https://github.com/kianmhz/GooseRelayVPN/releases/latest/download/GooseRelayVPN-server-${GOOSEVPN_VERSION}-linux-${OS_ARCH}.tar.gz"
+    local DOWANLOAD_URL="https://github.com/kianmhz/GooseRelayVPN/releases/latest/download/GooseRelayVPN-server-v${GOOSEVPN_VERSION}-linux-${OS_ARCH}.tar.gz"
 
     #here we need create directory for GOOSE
     create_or_delete_path 1
